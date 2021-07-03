@@ -14,6 +14,21 @@
     "prepare": "husky install",
     "stylelint": "npx stylelint \"**/*.scss\""
   },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write src/**/*.js",
+      "eslint --fix"
+    ],
+    "*.scss": [
+      "prettier --write src/**/*.scss",
+      "npm run stylelint",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write *.json",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexGrin1/Portfolio.git"
