@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "./src/js/app.js",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
