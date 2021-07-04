@@ -20,6 +20,7 @@ module.exports = {
     'no-undef': 'off',
     'no-use-before-define': 'off',
     'no-alert': 'off',
+    'no-console': 'off',
   },
   plugins: ['prettier'],
 };
