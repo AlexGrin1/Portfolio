@@ -19,7 +19,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 100px;
   margin: 0 auto;
   height: 100vh;
 
@@ -76,19 +76,18 @@ header {
     opacity: 0.5;
     &:hover {
       cursor: pointer;
-      transition: 1s;
-      transform: scale(1.02);
+      transition: 0.5s;
+      transform: scale(1.01);
       opacity: 1;
     }
   }
 }
 main {
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 150px;
   margin: 0 auto;
   height: 1500px;
   & #skills {
