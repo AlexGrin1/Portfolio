@@ -1,0 +1,38 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.owl-carousel {
+  & .owl-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .owl-dots {
+    margin-bottom: 50px;
+  }
+
+  & .owl-item {
+    & + .center {
+      position: relative;
+      transform: scale(1);
+      transition: 0.3s;
+      opacity: 1;
+      transition-delay: 1s;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.993);
+    }
+    &:not(.center) {
+      transform: scale(0.9);
+      transition: 0.5s;
+      opacity: 0.8;
+    }
+    &:hover {
+      cursor: grabbing;
+      opacity: 1;
+      transition: 0.5s;
+    }
+  }
+}

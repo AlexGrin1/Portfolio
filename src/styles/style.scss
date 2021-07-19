@@ -10,18 +10,33 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  max-width: 1800px;
+  width: 100%;
   margin: 0 auto;
+  position: relative;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  letter-spacing: 27px;
+  height: 20%;
+  margin-top: 150px;
+  margin-bottom: 40px;
 }
 header {
+  max-width: 1800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 50px;
   margin: 0 auto;
-  height: 100vh;
 
   & .person_block {
     display: flex;
@@ -33,6 +48,7 @@ header {
       flex-direction: column;
 
       & .mail {
+        position: relative;
         font-size: 22px;
         letter-spacing: 7px;
         padding: 3px 6px;
@@ -52,7 +68,6 @@ header {
   & #img_block {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 
     & img {
       margin: 10px;
@@ -82,25 +97,28 @@ header {
     }
   }
 }
+
 main {
-  position: relative;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  margin-top: 150px;
   margin: 0 auto;
-  height: 1500px;
-  & #skills {
+
+  & .skills {
     display: flex;
-    width: 95%;
-    justify-content: space-between;
-    background: linear-gradient(rgba(8, 15, 26, 0.6) 0%, rgba(0, 0, 0, 0.9) 100%) 0% 0%,
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(rgba(8, 15, 26, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%) 0% 0%,
       url(../assets/maxwell-nelson-Se9ufo2dO_g-unsplash.jpg);
+    background-position: 50% 75%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
+    padding: 15px;
     font-weight: 400;
     & .artical_name {
       display: flex;
@@ -111,12 +129,28 @@ main {
       font-size: 55px;
     }
     & .skills_block {
+      max-width: 1800px;
       font-size: 40px;
       display: flex;
       flex-wrap: wrap;
       flex: 5;
-      justify-content: center;
+      justify-content: space-around;
       align-items: flex-start;
     }
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100wv;
+  background-color: rgb(54, 54, 54);
+  & > div {
+    letter-spacing: 1em;
+    padding: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
   }
 }

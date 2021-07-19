@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Hrynevich Alexander</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   </head>
   <body>
     <header>
@@ -25,13 +32,14 @@
       
     </header>
     <main>
-      <section id="skills">
-        <div class="artical_name">SKILLS :</div>
+      <section class="title">SKILLS</section>
+      <section class="skills">
+        <!-- <div class="artical_name">SKILLS :</div> -->
         <div class="skills_block">
           <ul>
             <li>HTML</li>
             <li>Semantic</li>
-            <li>Adaptive Layout</li>
+            <li>Responsive Layout</li>
           </ul>
           <ul>
             <li>CSS</li>
@@ -52,8 +60,65 @@
         </div>
         <div></div>
       </section>
-      <section></section>
+      <section class="title">MY WORKS</section>
+<div class="owl-carousel owl-theme">
+    <div class="item" >
+      <img src="./assets/lendingPage.png" alt="">
+    </div>
+    <div class="item">
+      <img src="./assets/fancy3.png" alt="">
+    </div>
+    <div class="item">
+      <img src="./assets/flexPanel2.png" alt="">
+    </div>
+    <div class="item">
+      <img src="./assets/raindrops2.png" alt="">
+    </div>
+    <div class="item">
+      <img src="./assets//singolo2.png" alt="">
+    </div>
+    <div class="item">
+      <img src="./assets//singolo1.png" alt="">
+    </div>
+    <div class="item">
+      <img src="./assets//photoFiltr.png" alt="">
+    </div>
+</div>
+     <!-- <section class="to-top">BACK</section> -->
     </main>
-    
-  </body>
+    <footer class="footer-block">
+        <div>Alexander Hrynevich</div>
+    </footer>
+   
+  
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script defer>
+     $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      items:2,
+      margin:30,
+      animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    smartSpeed:1500,
+      center:true,
+      loop:true,
+      // autoplay:true,
+      // autoplayTimeout:5000,
+      // smartSpeed: 2000,
+      responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:2
+            }
+        }
+    });
+  });
+</script>
+</body>
 </html>
