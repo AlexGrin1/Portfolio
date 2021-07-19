@@ -35,7 +35,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 100px;
   margin: 0 auto;
 
   & .person_block {
@@ -91,8 +91,8 @@ header {
     opacity: 0.5;
     &:hover {
       cursor: pointer;
-      transition: 1s;
-      transform: scale(1.02);
+      transition: 0.5s;
+      transform: scale(1.01);
       opacity: 1;
     }
   }
@@ -102,7 +102,7 @@ main {
   max-width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 150px;
   margin: 0 auto;
