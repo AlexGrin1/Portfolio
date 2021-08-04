@@ -21,6 +21,7 @@ module.exports = {
     'no-use-before-define': 'off',
     'no-alert': 'off',
     'no-console': 'off',
+    'no-plusplus': 'off',
   },
   plugins: ['prettier'],
 };
