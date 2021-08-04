@@ -1,1 +1,0 @@
-(()=>{"use strict";const e=document.querySelector("header>button"),t=document.querySelector(".title"),o=document.querySelector(".title"),c=t.getBoundingClientRect();console.log(window.scrollY,c.y),e.addEventListener("click",(()=>{const e=o.getBoundingClientRect();scrollTo(0,e.y)}))})();
