@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/shakrmedia/tuesday@v1.1.0/build/tuesday.min.css" />
     <title>Portfolio Hrynevich Alexander</title>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
@@ -25,19 +26,21 @@
       <div class="person-block">
         <img class="my-img" src="./assets/my_foto.png" alt="Alexander" />
         <div class="title-info">
-          <h2>Alexander Hrynevich</h2>
+          <h2 class="animated  tdDropInLeft ">Alexander Hrynevich</h2> 
+          <!-- tdDropInLeft -->
           <div>
             <a href="mailto:a_grynevich@mail.ru" target="_blank" class="mail">a_grynevich@mail.ru</a>
             <a href="tel:+375445369968" target="_blank" class="tel"> +375 (44) 536-99-68 </a>
           </div>
         </div>
       </div>
-      <h1>Frontend Developer</h1>
+      <h1 class="animated tdExpandInBounce ">Frontend Developer</h1>
+      <!-- tdHingeFlipIn -->
       <button>SHOW MORE</button>
       <div id="img-block">
-        <img src="./assets/kobu-agency-ipARHaxETRk-unsplash.jpg" alt="education" />
+        <img src="./assets/kobu-agency-ipARHaxETRk-unsplash.jpg" alt="education"  loading="lazy"/>
         <img src="./assets/rich-tervet-q2GNdFmhxx4-unsplash.jpg" alt="write code" />
-        <img src="./assets/kevin-bhagat-zNRITe8NPqY-unsplash.jpg" alt="improve" />
+        <img src="./assets/kevin-bhagat-zNRITe8NPqY-unsplash.jpg" alt="improve" loading="lazy" />
       </div>
     </header>
     <main>
@@ -66,30 +69,37 @@
         <div class="item">
           <img src="./assets/lendingPage.png" alt="" />
           <p>Lending page <span>JS Local Storage</span></p>
+          <a class="emerging-link" href="https://alexgrin1.github.io/Five-pages/Dynamic%20Landing%20Page/" target=_blank>SHOW MORE</a>
         </div>
         <div class="item">
-          <img src="./assets/fancy3.png" alt="" />
+          <img src="./assets/fancy3.png" alt=""   loading="lazy" />
           <p>Fancy weather project <span>JS API Async\await</span></p>
+          <a class="emerging-link" href="https://alexgrin1.github.io/Fancy-Weather/" target=_blank>SHOW MORE</a>
         </div>
         <div class="item">
-          <img src="./assets/flexPanel2.png" alt="" />
-          <p>Flex panek task</p>
+          <img src="./assets/flexPanel2.png" alt=""  loading="lazy"/>
+          <p>Flex panel task</p>
+          <a class="emerging-link" href="https://alexgrin1.github.io/Five-pages/Flex-Panel/" target=_blank>SHOW MORE</a>
         </div>
         <div class="item">
-          <img src="./assets/raindrops2.png" alt="" />
+          <img src="./assets/raindrops2.png" alt=""  loading="lazy"/>
           <p>Raindrops task</p>
+          <a class="emerging-link" href="https://alexgrin1.github.io/Raindrops/" target=_blank>SHOW MORE</a>
         </div>
         <div class="item">
-          <img src="./assets//singolo2.png" alt="" />
+          <img src="./assets//singolo2.png" alt=""  loading="lazy"/>
           <p>Simple singolo</p>
+          <a class="emerging-link" href="https://alexgrin1.github.io/Simple-singolo/" target=_blank>SHOW MORE</a>
         </div>
         <div class="item">
-          <img src="./assets//singolo1.png" alt="" />
+          <img src="./assets//singolo1.png" alt=""  loading="lazy"/>
           <p>Simple singolo</p>
+          <a class="emerging-link" href="https://alexgrin1.github.io/Simple-singolo/" target=_blank>SHOW MORE</a>
         </div>
         <div class="item">
-          <img src="./assets//photoFiltr.png" alt="" />
+          <img src="./assets//photoFiltr.png" alt="" loading="lazy" />
           <p>Photo filter</p>
+          <a class="emerging-link" href="https://alexgrin1.github.io/Five-pages/Variables-and-JS/" target=_blank>SHOW MORE</a>
         </div>
       </div>
       <!-- <section class="to-top">BACK</section> -->
@@ -113,9 +123,9 @@
           smartSpeed: 1500,
           center: true,
           loop: true,
-          // autoplay:true,
-          // autoplayTimeout:5000,
-          // smartSpeed: 2000,
+          autoplay:true,
+          autoplayTimeout:10000,
+          smartSpeed: 2000,
           responsive: {
             0: {
               items: 1,
